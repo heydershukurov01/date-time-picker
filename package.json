@@ -19,7 +19,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build_lib": "ng build picker && cp README.md dist/picker",
-    "build_css": "mkdir -p dist/picker/assets/style && node-sass --output-style=compressed projects/picker/src/sass/picker.scss > dist/picker/assets/style/picker.min.css",
+    "build_css": "mkdir dist/picker/assets/style && node-sass --output-style=compressed projects/picker/src/sass/picker.scss > dist/picker/assets/style/picker.min.css",
     "npm_pack": "cd dist/picker && npm pack",
     "package": "npm run build_lib && npm run build_css && npm run npm_pack"
   },
@@ -37,7 +37,7 @@
     "@angular/platform-browser-dynamic": "~8.2.6",
     "@angular/router": "~8.2.6",
     "core-js": "^2.6.5",
-    "moment": "^2.24.0",
+    "moment": "^2.27.0",
     "moment-timezone": "^0.5.25",
     "rxjs": "~6.5.3",
     "zone.js": "~0.9.1"
